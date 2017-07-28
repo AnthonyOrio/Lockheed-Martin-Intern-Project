@@ -34,8 +34,10 @@ def main():
 
     # Display the output
     plt.plot(xPositions, yPositions, 'b-', xWall, yWall, 'r-')
+    plt.title("DynaMITE Track and Canyon Plot")
+    plt.grid(True)
+    plt.legend(['Track Trace', 'Canyon Wall'])
     plt.show()
-    # Spruce this up with titles and labels and legends and such
 
 # Expect distance in inches, bearing in radians, and sonar time in microseconds
 def addPoint(distanceTraveled, bearing, sonarResponseTime):
